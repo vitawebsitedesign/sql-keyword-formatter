@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sql-formatter", "sql-formatter\sql-formatter.csproj", "{14475C83-6BB2-45DD-9FFF-CB003B722954}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|ARM.ActiveCfg = Debug|ARM
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|ARM.Build.0 = Debug|ARM
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|ARM.Deploy.0 = Debug|ARM
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|ARM64.Build.0 = Debug|ARM64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|x64.ActiveCfg = Debug|x64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|x64.Build.0 = Debug|x64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|x64.Deploy.0 = Debug|x64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|x86.ActiveCfg = Debug|x86
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|x86.Build.0 = Debug|x86
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Debug|x86.Deploy.0 = Debug|x86
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|ARM.ActiveCfg = Release|ARM
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|ARM.Build.0 = Release|ARM
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|ARM.Deploy.0 = Release|ARM
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|ARM64.ActiveCfg = Release|ARM64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|ARM64.Build.0 = Release|ARM64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|ARM64.Deploy.0 = Release|ARM64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|x64.ActiveCfg = Release|x64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|x64.Build.0 = Release|x64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|x64.Deploy.0 = Release|x64
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|x86.ActiveCfg = Release|x86
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|x86.Build.0 = Release|x86
+		{14475C83-6BB2-45DD-9FFF-CB003B722954}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {955733AD-23CC-4BF3-BC0D-C024629B41D4}
+	EndGlobalSection
+EndGlobal

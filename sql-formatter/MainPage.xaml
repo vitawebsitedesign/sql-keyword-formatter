@@ -10,7 +10,9 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="10*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -18,8 +20,15 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" FontSize="20">Sql Case Formatter</TextBlock>
-        <TextBox Name="tbRaw" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" PlaceholderText="Paste sql here" AcceptsReturn="True" TextChanged="TbRaw_TextChanged" />
-        <TextBox Name="tbFormatted" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" PlaceholderText="Sql with uppercase keywords will appear here" AcceptsReturn="True" IsReadOnly="True" />
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" FontSize="20" Margin="0,5,0,5">Sql Case Formatter</TextBlock>
+        <TextBlock Name="tbMatches" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" FontSize="12" Opacity="0">
+            <Run>Uppercased </Run>
+            <Run x:Name="runNumMatches"></Run>
+            <Run> keywords for you</Run>
+        </TextBlock>
+        <TextBlock Name="tbVerified" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" Text="Verified" Foreground="Green" FontSize="12" Margin="0,5,0,10" FontStyle="Italic" Opacity="0"></TextBlock>
+
+        <TextBox Name="tbRaw" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" PlaceholderText="Paste sql here" AcceptsReturn="True" IsSpellCheckEnabled="False" TextChanged="TbRaw_TextChanged" />
+        <TextBox Name="tbFormatted" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" AcceptsReturn="True" IsReadOnly="True" IsSpellCheckEnabled="False" GotFocus="TbFormatted_GotFocus" />
     </Grid>
 </Page>

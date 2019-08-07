@@ -24,7 +24,7 @@ namespace SqlKeywordFormatter.Util
             var output = sb.ToString();
             var changed = input != output;
             var verified = input.Equals(output, StringComparison.OrdinalIgnoreCase);
-            return new SqlFormatterResult(matches.Count(), output, changed, verified);
+            return new SqlFormatterResult(matchesToReplace.Count(), output, changed, verified);
         }
 
         private static IReadOnlyCollection<Range> GetCommentRanges(string sql)

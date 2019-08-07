@@ -42,6 +42,7 @@ namespace sql_formatter
             else
             {
                 tbMatches.Opacity = 0;
+                tbVerified.Opacity = 0;
             }
         }
 

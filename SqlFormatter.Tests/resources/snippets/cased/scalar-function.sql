@@ -1,0 +1,7 @@
+﻿CREATE FUNCTION [dbo].[taco](@myParam INT)
+RETURNS INT
+BEGIN
+	DECLARE @apple BIGINT;
+	SELECT 1; 
+	RETURN @apple;
+END

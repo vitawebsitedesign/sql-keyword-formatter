@@ -132,7 +132,8 @@
     <None Include="sql-formatter_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sql-keywords.txt" />
+    <Content Include="Assets\eyeball-background.png" />
+    <Content Include="Assets\eyeball-foreground.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -141,6 +142,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="tsql-keywords.txt" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -164,9 +166,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SqlKeywordFormatter.Util\SqlKeywordFormatter.Util.csproj">
-      <Project>{A809BCB3-A0B9-4AA4-892E-BC8C6779673B}</Project>
-      <Name>SqlKeywordFormatter.Util</Name>
+    <ProjectReference Include="..\SqlFormatter.Classes\SqlFormatter.Classes.csproj">
+      <Project>{558ca93c-9b38-4c83-9bcb-94af06962228}</Project>
+      <Name>SqlFormatter.Classes</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

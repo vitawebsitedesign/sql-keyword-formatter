@@ -1,0 +1,1 @@
+﻿SELECT * FROM /* dbo.apple */ dbo.taco;	-- comment

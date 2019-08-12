@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="45563MichaelNguyenAustral.93312E972819" Publisher="CN=D910703B-FFDC-4E04-A0B8-993059D3212B" Version="1.0.2.0" />
+  <Identity Name="45563MichaelNguyenAustral.93312E972819" Publisher="CN=D910703B-FFDC-4E04-A0B8-993059D3212B" Version="1.0.4.0" />
   <mp:PhoneIdentity PhoneProductId="436af4fa-71c2-4b52-b966-f1fb8c1dfd96" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SQL Keyword Formatter</DisplayName>
@@ -16,9 +16,15 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="sql_formatter.App">
       <uap:VisualElements DisplayName="SQL Keyword Formatter" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="sql-formatter" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="white" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="portraitFlipped" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

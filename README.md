@@ -12,4 +12,4 @@ cd sql-keyword-formatter
 Then open [the solution](https://github.com/vitawebsitedesign/sql-keyword-formatter/blob/master/sql-formatter.sln) in visual studio
 
 # Contributing
-Pull requests are welcome! Please ensure to run [the test suite](https://github.com/vitawebsitedesign/sql-keyword-formatter/tree/master/SqlFormatter.Tests) before opening one.
+Pull requests are welcome! Please ensure the [the test suite](https://github.com/vitawebsitedesign/sql-keyword-formatter/tree/master/SqlFormatter.Tests) passes before opening one.

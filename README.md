@@ -2,7 +2,7 @@
 This is a UWP app that automatically uppercases T-SQL keywords in multi-line strings.
 
 ## Getting started
-You can either install the official app from [the Microsoft Store](https://www.microsoft.com/en-au/store/apps/windows), or sideload the app locally.
+You can sideload the app locally.
 
 ```bash
 git clone git@github.com:vitawebsitedesign/sql-keyword-formatter.git

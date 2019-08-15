@@ -10,6 +10,7 @@ namespace SqlFormatter.Classes
     {
         private static readonly string _patternSingleLineComment = @"(--(.|\w)+?(\r|$))";
         private static readonly string _patternMultiLineComment = @"(\/\*(.|\s)+?\*\/)";
+        private static readonly string _patternLiteral = @"'(.|\s)+?'";
 
         public static SqlFormatterResult Format(string keywordsRegex, string input)
         {
@@ -23,9 +24,9 @@ namespace SqlFormatter.Classes
             }
 
             var pattern = $@"\b({keywordsRegex})\b";
-            var commentRanges = GetCommentRanges(input);
+            var ignoreRanges = GetIngoreRanges(input);
             var matches = Regex.Matches(input, pattern, RegexOptions.IgnoreCase).Cast<Match>();
-            var matchesToReplace = matches.Where(m => !IsMatchInComment(m.Index, commentRanges));
+            var matchesToReplace = matches.Where(m => !IsMatchIgnorable(m.Index, ignoreRanges));
 
             var sb = new StringBuilder(input);
             foreach (var match in matchesToReplace)
@@ -39,9 +40,9 @@ namespace SqlFormatter.Classes
             return new SqlFormatterResult(matchesToReplace.Count(), output, changed, verified);
         }
 
-        private static IReadOnlyCollection<Range> GetCommentRanges(string sql)
+        private static IReadOnlyCollection<Range> GetIngoreRanges(string sql)
         {
-            var pattern = $@"{_patternSingleLineComment}|{_patternMultiLineComment}";
+            var pattern = $@"{_patternSingleLineComment}|{_patternMultiLineComment}|{_patternLiteral}";
             var matches = Regex.Matches(sql, pattern, RegexOptions.IgnoreCase).Cast<Match>().ToList();
             return matches
                 .Select(Range.Map)
@@ -49,7 +50,7 @@ namespace SqlFormatter.Classes
                 .AsReadOnly();
         }
 
-        private static bool IsMatchInComment(int matchIndex, IReadOnlyCollection<Range> ranges)
+        private static bool IsMatchIgnorable(int matchIndex, IReadOnlyCollection<Range> ranges)
         {
             foreach (var range in ranges)
             {

@@ -1,7 +1,5 @@
 language: csharp
 solution: sql-formatter.sln
-mono:
-  - 3.10.0
 install:
   - nuget restore sql-formatter.sln
   - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner

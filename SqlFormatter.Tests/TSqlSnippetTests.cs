@@ -18,6 +18,7 @@ namespace SqlFormatter.Tests
 
         [TestCase("all-keywords.sql")]
         [TestCase("empty.sql")]
+        [TestCase("keyword-in-string.sql")]
         [TestCase("keyword-with-newline.sql")]
         [TestCase("keyword-without-newline.sql")]
         [TestCase("leading-tab.sql")]

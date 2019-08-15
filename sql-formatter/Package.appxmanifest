@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="45563MichaelNguyenAustral.93312E972819" Publisher="CN=D910703B-FFDC-4E04-A0B8-993059D3212B" Version="1.0.4.0" />
+  <Identity Name="45563MichaelNguyenAustral.93312E972819" Publisher="CN=D910703B-FFDC-4E04-A0B8-993059D3212B" Version="1.0.5.0" />
   <mp:PhoneIdentity PhoneProductId="436af4fa-71c2-4b52-b966-f1fb8c1dfd96" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SQL Keyword Formatter</DisplayName>

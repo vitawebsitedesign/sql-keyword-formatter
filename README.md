@@ -1,6 +1,8 @@
 ## About
 This is a UWP app that automatically uppercases T-SQL keywords in multi-line strings.
 
+This compiled UWP app is also available [on the Microsoft Store](https://www.microsoft.com/en-au/p/sql-keyword-formatter/9mv09gl7hrt1?cid=msft_web_chart&activetab=pivot:overviewtab)
+
 ## Getting started
 You can sideload the app locally.
 
